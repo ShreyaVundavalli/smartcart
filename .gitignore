@@ -1,0 +1,20 @@
+# Python environments:
+venv/
+env/
+__pycache__/
+
+# macOS system files:
+.DS_Store
+
+# JSON files that might contain sensitive data:
+*.json
+
+# Byte-compiled / optimized / DLL files:
+*.py[cod]
+*$py.class
+
+# Editor directories and files:
+.idea/
+.vscode/
+*.swp
+*.swo
