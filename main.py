@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, Request
 import firebase_admin
 from firebase_admin import credentials, firestore
 import os
@@ -7,7 +7,6 @@ import json
 
 app = FastAPI()
 
-# Ensure the environment variable is set
 encoded_creds = os.getenv('FIREBASE_CREDENTIALS_BASE64')
 if not encoded_creds:
     raise Exception("Firebase credentials environment variable is not set.")
